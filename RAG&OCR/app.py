@@ -2,7 +2,7 @@ import streamlit as st
 import chains
 import vectordb
 
-def poem_generator_app():
+def content_generator_app():
     """
     Generates Poem Generator App with Streamlit, providing user input and displaying output.
     Includes a sidebar with two sections: Poem Generator and File Ingestion for RAG.
@@ -48,4 +48,4 @@ def poem_generator_app():
             vectordb.store_pdf_in_chroma(uploaded_file, vectordatabase)
             st.success(f"File '{uploaded_file.name}' uploaded  and file embedding stored in vectordb successfully!")
 
-poem_generator_app()
+content_generator_app()
