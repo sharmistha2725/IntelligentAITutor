@@ -1,0 +1,32 @@
+python3 -m venv .
+
+source bin/activate
+
+.gitignore
+
+.env
+
+pip3 install python-dotenv langchain langchain_groq streamlit
+
+# update this on every installation
+pip freeze > requirements.txt
+to use : pip install -r requirements.txt
+
+show google monitoring of that api
+
+python3 app.python
+
+------------------------------------------------
+# streamlit
+pip3 install streamlit
+streamlit hello
+
+# Running
+python -m streamlit run your_script.py
+# is equivalent to:
+streamlit run your_script.py
+
+https://docs.streamlit.io/develop/tutorials/llms/llm-quickstart
+https://docs.streamlit.io/develop/api-reference/text
+
+------------------------------------------------
